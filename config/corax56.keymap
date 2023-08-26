@@ -137,11 +137,11 @@
         special_layer {
             label = "Special";
             bindings = <
-                      &kp F1              &kp F2    &kp F3         &kp F4                &kp F5                                   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-           &trans  &kp SLASH              &trans    &kp UP         &trans  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &trans  &trans  &trans   &trans    &kp F11
-&trans  &ud_grave     &trans            &kp LEFT  &kp DOWN      &kp RIGHT              &kp LBKT                        &kp RIGHT_BRACKET  &trans  &trans  &trans   &trans  &ud_tilde  &kp F12
-           &trans   &kp STAR  &kp LS(LEFT_ARROW)    &trans  &kp LS(RIGHT)        &kp LEFT_BRACE  &trans    &trans        &kp RIGHT_BRACE  &trans  &trans  &trans   &trans     &trans
-                                                    &trans         &trans                &trans  &trans    &trans                 &trans  &trans  &trans
+                      &kp F1              &kp F2    &kp F3         &kp F4                &kp F5                                            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+           &trans  &kp SLASH              &trans    &kp UP         &trans  &kp LEFT_PARENTHESIS                             &kp RIGHT_PARENTHESIS  &trans  &trans  &trans   &trans    &kp F11
+&trans  &ud_grave     &trans            &kp LEFT  &kp DOWN      &kp RIGHT              &kp LBKT                                 &kp RIGHT_BRACKET  &trans  &trans  &trans   &trans  &ud_tilde  &kp F12
+           &trans   &kp STAR  &kp LS(LEFT_ARROW)    &trans  &kp LS(RIGHT)        &kp LEFT_BRACE  &trans             &trans        &kp RIGHT_BRACE  &trans  &trans  &trans   &trans     &trans
+                                                    &trans         &trans                &trans  &trans    &lt 3 BACKSPACE                 &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -149,11 +149,11 @@
 
         media_layer {
             bindings = <
-                &trans  &trans  &trans  &trans  &trans                    &trans          &trans         &trans      &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans    &kp PAGE_UP      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp C_PREVIOUS  &kp PAGE_DOWN  &kp C_NEXT  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans      &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans
+                &trans  &trans  &trans  &trans  &trans                       &trans          &trans         &trans      &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans                       &trans          &trans    &kp PAGE_UP      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                       &trans  &kp C_PREVIOUS  &kp PAGE_DOWN  &kp C_NEXT  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans          &trans         &trans      &trans  &trans  &trans
+                                &trans  &trans  &trans  &lt 3 TAB    &trans  &trans          &trans         &trans
             >;
 
             sensor-bindings =
