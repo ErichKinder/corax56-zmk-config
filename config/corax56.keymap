@@ -119,32 +119,19 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_layer {
-            label = "Colemak";
+        qwerty_layer {
+            label = "Qwerty";
             bindings = <
-                       &kp N1  &kp N2     &kp N3          &kp N4     &kp N5                                     &kp N6    &kp N7     &kp N8   &kp N9    &kp N0
-            &kp GRAVE   &kp Q   &kp W      &kp E           &kp R      &kp T                                      &kp Y     &kp U      &kp I    &kp O     &kp P   &kp BSPC
-&kp ESC  &kp CAPSLOCK   &kp A   &kp S      &kp D           &kp F      &kp G                                      &kp H     &kp J      &kp K    &kp L  &kp SEMI    &kp SQT  &kp EQUAL
-             &kp LWIN   &kp Z   &kp X      &kp C           &kp V      &kp B  &kp C_MUTE    &kp C_PLAY_PAUSE      &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
-                                       &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER   &lt 2 TAB       &kp BACKSPACE  &kp SPACE  &kp RALT   &kp RGUI
+                       &kp N1  &kp N2     &kp N3          &kp N4     &kp N5                                     &kp N6   &kp N7        &kp N8   &kp N9    &kp N0
+            &kp GRAVE   &kp Q   &kp W      &kp E           &kp R      &kp T                                      &kp Y    &kp U         &kp I    &kp O     &kp P   &kp BSLH
+&kp ESC  &kp CAPSLOCK   &kp A   &kp S      &kp D           &kp F      &kp G                                      &kp H    &kp J         &kp K    &kp L  &kp SEMI    &kp SQT  &kp EQUAL
+             &kp LWIN   &kp Z   &kp X      &kp C           &kp V      &kp B  &kp C_MUTE    &kp C_PLAY_PAUSE      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+                                       &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER   &lt 1 TAB       &kp BACKSPACE  &kp SPACE  &kp DEL  &kp LEFT_ALT
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
-        };
-
-        qwerty_layer {
-            label = "QWERTY";
-            bindings = <
-                &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans   &trans     &trans
-        &trans   &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U      &kp I    &kp O      &kp P   &trans
-&trans  &trans   &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J      &kp K    &kp L   &kp SEMI  &ud_sqt  &trans
-        &trans   &kp Z   &kp X   &kp C   &kp V   &kp B  &trans    &trans   &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH   &trans
-                                &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
 
         special_layer {
@@ -177,9 +164,9 @@
             label = "Adjust";
             bindings = <
                           &trans        &trans        &trans        &trans        &trans                    &trans      &trans      &trans        &trans  &trans
-            &trans   &to DEFAULT        &trans        &trans        &trans        &trans                    &trans      &trans      &trans        &trans  &trans  &trans
+            &trans         &to 0        &trans        &trans        &trans        &trans                    &trans      &trans      &trans        &trans  &trans  &trans
 &bt BT_CLR  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &trans  &trans  &trans
-            &trans        &trans        &trans   &to COLEMAK        &trans        &trans  &trans    &trans  &trans      &trans      &trans        &trans  &trans  &trans
+            &trans        &trans        &trans         &to 0        &trans        &trans  &trans    &trans  &trans      &trans      &trans        &trans  &trans  &trans
                                                       &trans        &trans        &trans  &trans    &trans  &trans      &trans      &trans
             >;
 
